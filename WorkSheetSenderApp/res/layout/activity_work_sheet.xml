@@ -1,0 +1,242 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000"
+    android:orientation="vertical"
+    tools:context=".WorkSheetActivity" >
+
+    <!-- 主要資訊 Table -->
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:background="@drawable/table" >
+
+        <TableRow
+            android:background="@drawable/cell_shape"
+            android:gravity="left"
+            android:paddingLeft="10sp" >
+
+            <TextView
+                android:text="@string/fileName"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editFileName"
+                android:inputType="text"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/cell_shape"
+            android:gravity="left"
+            android:paddingLeft="10sp" >
+
+            <TextView
+                android:text="@string/startDate"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editStartDate"
+                android:inputType="date"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+
+        <TableRow
+            android:background="@drawable/cell_shape"
+            android:gravity="left"
+            android:paddingLeft="10sp" >
+
+            <TextView
+                android:text="@string/consutantName"
+                android:textColor="#FFFFFF" />
+
+            <EditText
+                android:id="@+id/editConsultantName"
+                android:inputType="text"
+                android:textColor="#FFFFFF" />
+        </TableRow>
+    </TableLayout>
+
+    <!-- Excel「工作日誌」內容 -->
+
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="5sp"
+        android:fillViewport="true"
+        android:scrollbars="horizontal" >
+
+        <TableLayout
+            android:id="@+id/tableData"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/table"
+            android:stretchColumns="*" >
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:gravity="left" >
+
+                <TextView
+                    android:text="@string/date"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:text="@string/hours"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:text="@string/system"
+                    android:textColor="#FFFFFF" />
+
+                <TextView
+                    android:text="@string/deliverable"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/datarow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:gravity="left" >
+
+                <TextView android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/hours"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/system"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/deliverable"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/datarow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:gravity="left" >
+
+                <TextView android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/hours"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/system"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/deliverable"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/datarow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:gravity="left" >
+
+                <TextView android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/hours"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/system"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/deliverable"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/datarow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:gravity="left" >
+
+                <TextView android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/hours"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/system"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/deliverable"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/datarow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cell_shape"
+                android:gravity="left" >
+
+                <TextView android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/hours"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/system"
+                    android:textColor="#FFFFFF" />
+
+                <EditText
+                    android:text="@string/deliverable"
+                    android:textColor="#FFFFFF" />
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="20sp"
+        android:background="#CCFFFF"
+        android:padding="10sp"
+        android:text="@string/submit" >
+    </Button>
+
+    <Button
+        android:id="@+id/buttonHome"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginRight="20sp"
+        android:layout_marginTop="10sp"
+        android:background="#FFFFDD"
+        android:padding="10sp"
+        android:text="@string/home" >
+    </Button>
+
+</LinearLayout>

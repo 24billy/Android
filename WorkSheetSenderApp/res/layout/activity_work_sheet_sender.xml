@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".WorkSheetSenderActivity" >
+
+    <TextView
+        android:id="@+id/textMain"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:textSize="30sp"
+        android:textColor="#FFFFFF"
+        android:text="@string/main" />
+
+    <Button
+        android:id="@+id/buttonWorkSheet"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="60sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:padding="10sp"
+        android:background="#CCFFFF"
+        android:text="@string/buttonWorkSheet" />
+
+    <Button
+        android:id="@+id/buttonSender"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:padding="10sp"
+        android:background="#CCFFFF"
+        android:text="@string/buttonSender" />
+
+</LinearLayout>
